@@ -81,4 +81,4 @@ class UserOrderItem(models.Model):
     comment = models.TextField()
 
     def __unicode__(self):
-        return self.item
+        return str(self.item)
