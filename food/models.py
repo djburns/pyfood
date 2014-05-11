@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 class Vendor(models.Model):
     name = models.CharField(max_length=30)
+    description = models.TextField(blank=True)
 
     def __unicode__(self):
         return self.name
